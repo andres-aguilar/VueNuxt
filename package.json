@@ -8,7 +8,9 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "author": "Andres Aguilar",
   "license": "ISC",
@@ -17,5 +19,8 @@
     "bulma": "^0.7.2",
     "nuxt": "^2.2.0",
     "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
